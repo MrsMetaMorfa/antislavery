@@ -1,0 +1,91 @@
+@media screen and (max-width: 1024px)
+  .p_column
+    width: 60%
+    &:last-child
+      width: auto
+      margin-right: 0
+@media screen and (max-width: 959px)
+  .mobile-menu
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-size: 0
+    line-height: 0
+    padding: 0
+    margin: auto 0
+    border: none
+    border-radius: 0
+    background: transparent
+    width: 36px
+    height: 36px
+    outline: none
+    span
+      display: block
+      height: 2px
+      width: 32px
+      margin: auto
+      background: #343434
+      transform-origin: left center
+    &.active
+      span
+        width: 0
+        &:first-of-type
+          width: 34px
+          transform: rotate(45deg)
+        &:last-of-type
+          width: 34px
+          transform: rotate(-45deg)
+  .p_header ul
+    position: absolute
+    flex-wrap: wrap
+    right: -250px
+    top: 70px
+    background: white
+    box-shadow: -2px 2px 10px -2px #888
+    align-items: center
+    width: 230px
+    li
+      margin-left: 0
+      padding: 0 15px
+      display: flex
+      justify-content: center
+      width: 100%
+      &:last-of-type
+        width: 50%
+      &:nth-last-of-type(2)
+        order: 1
+        width: 100%
+        margin-top: 10px
+      &:nth-last-of-type(3)
+        width: 50%
+    &.open
+      right: 0
+
+@media screen and (max-width: 767px)
+  .p_main
+    section
+      flex-direction: column-reverse
+  .p_column
+    width: 100%
+    margin-right: 0
+    &:last-of-type
+      margin-bottom: 52px
+  .wrapper
+    width: 92%
+
+@media screen and (max-width: 540px)
+  .p_title
+    font-size: 32px
+  .services
+    &_item
+      flex-wrap: wrap
+      justify-content: center
+      &:before
+        margin-top: auto
+        margin-bottom: auto
+      &__description
+        margin-top: 30px
+
+*, *:before, *:after
+  transition: all 0.3s ease-in-out

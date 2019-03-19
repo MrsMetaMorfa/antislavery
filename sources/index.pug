@@ -1,0 +1,53 @@
+extends templates/layout/main.pug
+
+include templates/Header
+
+block title
+    title Simple Title
+
+block pagecontent
+    +Header
+
+    main.p_main
+        section.wrapper.container.container--justified
+            .p_column
+                h1.p_title Сервисы трудоустройства -
+                    small лучшие инструменты для поиска работы!
+                ul.services
+                    li.services_item.container
+                        .services_item__icon
+                            img(src='assets/images/formula-icon.png', alt='Формула успешного собеседования')
+                        .services_item__description
+                            h2.title
+                                a(href='#') Формула успешного собеседования
+                                | -
+                            p сервис подготовки к переговорам всего за 24 часа
+                    li.services_item.container
+                        .services_item__icon
+                            img(src='assets/images/rassilka-icon.png', alt='Рассылка вашего резюме по базе HR-специалистов')
+                        .services_item__description
+                            h2.title
+                                a(href='#') Рассылка вашего резюме по базе HR-специалистов
+                                | -
+                            p более 2000+ человек, заинтересованных в вашем профессионализме
+                    li.services_item.container
+                        .services_item__icon
+                            img(src='assets/images/sobesedovanie-icon.png', alt='Профессиональное представление в компании')
+                        .services_item__description
+                            h2.title
+                                a(href='#') Профессиональное представление в компании
+                            p по выбору кандидата - устройтесь в компанию мечты
+                    li.services_item.container
+                        .services_item__icon
+                            img(src='assets/images/rezume-like-icon.png', alt='Публикация на витрине кандидатов')
+                        .services_item__description
+                            h2.title
+                                a(href='#') Публикация на витрине кандидатов
+                                | -
+                            p площадка с аудиторией в 160000+ потенциальных работодателей
+            .p_column
+                .photo_container
+                    img(src='assets/images/screen4-image.jpg', alt='Успешное собеседование')
+
+    //script(src='scripts/libs/jquery-3.2.1.min.js')
+    //script(src='scripts/common.js')

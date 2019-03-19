@@ -1,0 +1,27 @@
+mixin Header()
+    header.p_header
+        nav.wrapper.container.container--justified
+            a.container.container--column.p_logo(href='index.html')
+                img(src='assets/images/logo.png', alt='Антирабство')
+                span Найдите свое призвание
+
+            button.mobile-menu(type='button', onclick='this.classList.toggle("active");this.nextSibling.classList.toggle("open");') Меню
+                span
+                span
+                span
+            ul.container
+                li
+                    button.p_header__callme(type='button')
+                        span.icon
+                            img(src='assets/images/tel.png', alt='Call me')
+                        | Позвоните мне
+                li
+                    a(href='#') Каталог консультантов
+                li
+                    a(href='#') FAQ
+                li
+                    button.p_header__enter(type='button') Войти
+                li
+                    a.p_header__shop.container(href='#') Корзина
+                        img(src='assets/images/bag.svg', alt="Корзина")
+
